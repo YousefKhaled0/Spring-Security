@@ -31,8 +31,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter implements W
                 .and()
                 .formLogin()
                 .loginPage("/user/login")
-                .defaultSuccessUrl("/user/hello")
-                .permitAll();
+                .defaultSuccessUrl("/user/hello");
     }
 
     @Bean
