@@ -1,0 +1,54 @@
+server:
+  port: 80
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: "jdbc:postgresql://192.168.63.3:7010/test_db"
+    username: postgres
+    password: postgres
+
+jwt:
+  keys:
+    privateKey: |
+      -----BEGIN RSA PRIVATE KEY-----
+      MIIEpQIBAAKCAQEAxqcgiKcrKVWhpO2/hsMMV4CTjoOysGJOZy+VRbswGmi1pp5c
+      CKAHmExE5Lf2bySYcC8qpLy2aL4LsGSn3yp4MY25rB5k6lxgskMORVLn3n42O5XU
+      ZO8AfzsUl5iNQrmbmuEweGFFQIhWPozFoGXzz5B6rcyIj2k82tIITBXZKvul8kjC
+      fRX6OOV9GpqMxCfy721mMrVzDNKjH0E41EXgAaxVW32QvLa9UBnaVgdsgjpx0Hd8
+      S/eVrKHGAwmIQKhk61aFCdVrG+BdpnH5Y4JBKAJTto4DRaV9K5z7Sc5+Bbbg4BwE
+      nYzHcJKUBHBlrydidxDFHqPpNo2utGkwSPOA9QIDAQABAoIBAQCctfMgWl/eN8NQ
+      zI0uzmfKD5BX+OTZ6HNZS1xCqiyEaN4EFyEbXMMhDem7VLR/cSsgNNU7J/PuJR4r
+      hPw5PNOco+U5NrD9gOp3Nhbn8UMhbgdycfwfs7t8oyrXfGzTmoB6afNGw9VR1zvS
+      FFNC+aqgr6VXveZs2+Q56z7IZuPu1zpsAx6Tci8aaYymEzHzMHXYBAQJtV0Iq21L
+      mIveLwultkdGcjsSk9tLDWVl1Xaux2H6rBXqHeH65Cne+e6H+Teg/psl/fUFg8f+
+      AGyJ5tzuVaJy6qoRd8zRhOU87evC0DiVnPYmx328pPDnZNOx18nblcB754HD59RT
+      uYJmgn1xAoGBAOZlv3xt97IO0ukjzCH3jLQgCCAl4DTP3BFw+dmaJzp0zx20g6fM
+      XM2gBzBi4dvEddWq+PkTWWVX3WHSLu1Vy5ED2LzWt0FIcSw3upN+FtjPNQOoDmvE
+      GZFMmL8AEI38U9H/wuVi7k6LGb/TEtkZkT33rE53X85LTcggVSdJ7gx3AoGBANy6
+      UkcdrB+8dbHapGMzlrRcHLO6/DqLRq1LxYXRCAnOsRBLAb7s1L9ii+rhKwJ4LWIL
+      KTj5p2DprqPVaG69ROS6mTu1a3ksdf/EwQ0SbE3/inYuewL50pmHWBpKepyWgka4
+      yWgZQbIY21bQx61j/k6M0r8Etqh6vYhcWm/fFrTzAoGBAOTeQh+K5bk9PIpYAxni
+      3SS5hRjaRyRvLz8sKSXeGgXZrzzk6ruvKKkixMFuGMrFGADOvFBAxlcDt2jK787X
+      oUZGufCsopH5MmMoYPDPGkb5XsJpGRo4TOWnXzytBcTl2SYMmUBgzDW9vDBvrpN2
+      8G7ML6AquUMmTvf0FmLW79/1AoGAcAhiGpaE9tbBJjTDm1Zj98eJCfCudUib5vm+
+      l90xJ0kxtgNcL3wlv75VJjKDkg1Ne6YOlkyhGB+D9MQs7YhDn5TWkefTVP2sJtXG
+      5sujDTPXI4UUCr6iliqMHUwQT8pU9XB1SdEH902GhtoRf4BxY402qp3J2Fn0OXIm
+      tQGWlOECgYEAwdXGHvbevYjsfUwnFt66WFHjBskmu7jnJUT+mRMy8TYRrd7WObXq
+      /yUhTyCIQStVtEWUhO7emRk0p1l+bxsdTIMAeyltJMLahQdgY/xzuB38C5E9Suzi
+      YqCEcgIQnTZ7xXUGWtkyWyVg+AIFDNpoMo8hNgdpd8i3x02Oxd8qVbk=
+      -----END RSA PRIVATE KEY-----
+    publicKey: |
+      -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxqcgiKcrKVWhpO2/hsMM
+      V4CTjoOysGJOZy+VRbswGmi1pp5cCKAHmExE5Lf2bySYcC8qpLy2aL4LsGSn3yp4
+      MY25rB5k6lxgskMORVLn3n42O5XUZO8AfzsUl5iNQrmbmuEweGFFQIhWPozFoGXz
+      z5B6rcyIj2k82tIITBXZKvul8kjCfRX6OOV9GpqMxCfy721mMrVzDNKjH0E41EXg
+      AaxVW32QvLa9UBnaVgdsgjpx0Hd8S/eVrKHGAwmIQKhk61aFCdVrG+BdpnH5Y4JB
+      KAJTto4DRaV9K5z7Sc5+Bbbg4BwEnYzHcJKUBHBlrydidxDFHqPpNo2utGkwSPOA
+      9QIDAQAB
+      -----END PUBLIC KEY-----
+
